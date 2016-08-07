@@ -1,0 +1,10 @@
+#test {
+	margin-top: 10%;
+	margin-left: 35%;
+	width: 300px;
+	height: 100px;
+	border: 1px solid black;
+	border-radius: 20px;
+	behavior: url(ie-css3.htc);
+	
+}

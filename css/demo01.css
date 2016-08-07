@@ -1,0 +1,279 @@
+body,section,figure {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #2f3238;
+}
+
+section {
+	width: 900px;
+	margin: auto;
+}
+
+section figure {
+	width: 414px;
+	height: 313px;
+	overflow: hidden;
+	float: left;
+	margin: 2%;
+	position: relative;
+}
+
+figure img {
+	width: 100%;
+}
+
+.late img {
+	width: calc(100%+ 50px);
+	-webkit-transform: translate(-50px, 0);
+	-moz-transform: translate(-50px, 0);
+	-ms-transform: translate(-50px, 0);
+	-webkit-transition: -webkit-transform .3s, opacity .3s;
+	-moz-transition: -moz-transform .3s opacity .3s;
+	-ms-transition: -ms-transform .3s opacity .3s;
+	opacity: .7;
+}
+
+.late figcaption {
+	color: #fff;
+	top: 220px;
+	left: 30px;
+	font-family: "微软雅黑";
+	position: absolute;
+}
+
+.late figcaption h2 {
+	-webkit-transition: -webkit-transform .3s;
+	-moz-transition: -moz-transform .3s;
+	-ms-transition: -ms-transform .3s;
+}
+
+.late figcaption p {
+	opacity: 0;
+	-webkit-transition: -webkit-transform .3s, opacity .2s;
+	-moz-transition: -moz-transform .3s, opacity .2s;
+	-ms-transition: -ms-transform .3s, opacity .2s;
+}
+
+.late:hover img {
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	opacity: 1;
+}
+
+.late:hover figcaption h2 {
+	-webkit-transform: translate(0, -25px);
+	-moz-transform: translate(0, -25px);
+	-ms-transform: translate(0, -25px);
+}
+
+.late:hover figcaption p {
+	opacity: 1;
+	-webkit-transform: translate(0, -40px);
+	-moz-transform: translate(0, -40px);
+	-ms-transform: translate(0, -40px);
+}
+
+.scale img {
+	-webkit-transform: scale(1.12);
+	-moz-transform: scale(1.12);
+	-ms-transform: scale(1.12);
+	opacity: 1;
+	-webkit-transition: -webkit-transform .3s, opacity .3s;
+	-moz-transition: -moz-transform .3s, opacity .3s;
+	-ms-transition: -ms-transform .3s, opacity .3s;
+}
+
+.scale figcaption {
+	color: #fff;
+	font-family: "微软雅黑";
+}
+
+.scale figcaption h2 {
+	position: absolute;
+	top: 80px;
+	text-align: center;
+	width: 100%;
+}
+
+.scale figcaption p {
+	position: absolute;
+	top: 130px;
+	text-align: center;
+	width: 100%;
+	transform: scale(1.2);
+	opacity: 0;
+	-webkit-transition: opacity .3s, -webkit-transform .3s;
+	-moz-transform: opacity .3s, -moz-transform .3s;
+	-ms-transform: opacity .3s, -ms-transform .3s;
+}
+
+.scale figcaption:after {
+	content: "";
+	width: 80%;
+	height: 80%;
+	border: 1px #fff solid;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	opacity: 0;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-webkit-transition: opacity .3s, -webkit-transform .3s;
+	-moz-transition: opacity .3s, -moz-transform .3s;
+	-ms-transition: opacity .3s, -ms-transform .3s;
+}
+
+.scale:hover img {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	opacity: .6;
+}
+
+.scale:hover figcaption:after {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	opacity: 1;
+}
+
+.scale:hover figcaption p {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	opacity: 1;
+}
+
+.rotate figcaption {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fff;
+	font-family: "微软雅黑";
+	-webkit-transition: background .3s;
+	-moz-transition: background .3s;
+	-ms-transition: background .3s;
+}
+
+.rotate figcaption h2 {
+	margin-left: 30px;
+	margin-top: 40px;
+	-webkit-transition: -webkit-transform .3s;
+	-moz-transition: -moz-transform .3s;
+	-ms-transition: -ms-transform .3s;
+}
+
+.rotate figcaption p {
+	margin-top: 40px;
+	margin-left: 70px;
+	opacity: 0;
+	-webkit-transition: opacity .3s, -webkit-transform .3s;
+	-moz-transition: opacity .3s, -moz-transform .3s;
+	-ms-transition: opacity .3s, -ms-transform .3s;
+}
+
+.rotate figcaption div {
+	width: 330px;
+	height: 250px;
+	position: absolute;
+	top: 30px;
+	left: 41px;
+	border: 1px #fff solid;
+	-webkit-transform: translate(0, -282px) rotate(-360deg);
+	-moz-transform: translate(0, -282px) rotate(-360deg);
+	-ms-transform: translate(0, -282px) rotate(-360deg);
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-ms-transition: all .3s;
+}
+
+.rotate:hover figcaption {
+	background: rgba(0, 128, 0, .4);
+}
+
+.rotate:hover figcaption h2 {
+	-webkit-transform: translate(40px, 0);
+	-moz-transform: translate(40px, 0);
+	-ms-transform: translate(40px, 0);
+}
+
+.rotate:hover figcaption div {
+	-moz-transform: translate(0, 0) rotate(0deg);
+	-webkit-transform: translate(0, 0) rotate(0deg);
+	-ms-transform: translate(0, 0) rotate(0deg);
+}
+
+.rotate:hover figcaption p {
+	opacity: 1;
+	-webkit-transform: translate(0, -30px);
+	-moz-transform: translate(0, -30px);
+	-ms-transform: translate(0, -30px);
+}
+
+.skew figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-family: "微软雅黑";
+}
+
+.skew figcaption div {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: red;
+	opacity: 0;
+	-webkit-transition: opacity .3s;
+	-moz-transition: opacity .3s;
+	-ms-transition: opacity .3s;
+}
+
+.skew figcaption h2 {
+	margin-left: 50px;
+	margin-top: 30px;
+	-webkit-transform: skew(90deg);
+	-moz-transform: skew(90deg);
+	-ms-transform: skew(90deg);
+	-webkit-transition: -webkit-transform .3s;
+	-moz-transition: -moz-transform .3s;
+	-ms-transition: -ms-transform .3s;
+}
+
+.skew figcaption p {
+	margin-left: 50px;
+	-webkit-transform: skew(90deg);
+	-moz-transform: skew(90deg);
+	-ms-transform: skew(90deg);
+	-webkit-transition: -webkit-transform .3s;
+	-moz-transition: -moz-transform .3s;
+	-ms-transition: -ms-transform .3s;
+}
+
+.skew:hover figcaption div {
+	opacity: .2;
+}
+
+.skew:hover figcaption h2 {
+	-webkit-transform: skew(0deg);
+	-moz-transform: skew(0deg);
+	-ms-transform: skew(0deg);
+}
+
+.skew:hover figcaption p {
+	-webkit-transform: skew(0deg);
+	-moz-transform: skew(0deg);
+	-ms-transform: skew(0deg);
+}
+
